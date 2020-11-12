@@ -3012,7 +3012,7 @@ u8 key_mode =1;
 
 	//USART1_Puts("1234567\r\n");
 	 
-
+	//RS485_TX_EN();
 	while(1)
 	{
 		if((1== packerflag))
@@ -3085,6 +3085,8 @@ u8 key_mode =1;
 			{
 				SEGGER_RTT_printf(0, "---test1---\n"); 
 				LED1=!LED1;
+				//UartSendString("1234567\r\n");
+				//RS485_TX_EN();
 			}
 		}
 		if(tick_times%10==0)//2

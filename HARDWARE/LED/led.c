@@ -1,9 +1,10 @@
 #include "led.h"
 #include "SEGGER_RTT.h"
+#include "exti.h"
 
 //////////////////////////////////////////////////////////////////////////////////	 
 //本程序只供学习使用，未经作者许可，不得用于其它任何用途
-//ALIENTEK miniSTM32开发板
+//ALIENTEK mini?SSTM32开发板
 //LED驱动代码	   
 //正点原子@ALIENTEK
 //技术论坛:www.openedv.com
@@ -64,7 +65,7 @@ void LED_Init(void)
 	GPIO_ResetBits(GPIOB,GPIO_Pin_7); 						 //输出高 
 
 
-//	//i group1
+//	//i group1  test open
 //	GPIO_InitStructure.GPIO_Pin  = GPIO_Pin_0;//
 //	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IPU; //设置成上拉输入
 // 	GPIO_Init(GPIOC, &GPIO_InitStructure);//
@@ -288,7 +289,7 @@ void TIM4_Int_Init(u16 arr,u16 psc)
 
 	//中断优先级NVIC设置
 	NVIC_InitStructure.NVIC_IRQChannel = TIM4_IRQn;  //TIM4中断
-	NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 0;  //先占优先级0级
+	NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 1;  //先占优先级0级
 	NVIC_InitStructure.NVIC_IRQChannelSubPriority = 1;  //从优先级3级
 	NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE; //IRQ通道被使能
 	NVIC_Init(&NVIC_InitStructure);  //初始化NVIC寄存器
@@ -320,11 +321,22 @@ void TIM4_IRQHandler(void)   //TIM4中断
 					SEGGER_RTT_printf(0, "lock_channel=%d\n",lock_channel);
 					case 1://power on
 						GO_1=1; 					//open
-						LED2_CTL = 1;
-						delay_ms(100);  
-						GO_1=0;						//close
-						
-						
+//						delay_us(100);
+						//-------in occure-------
+						if(0==lock_jiance_flag)
+						{
+							delay_ms(300);
+							GO_1=0;
+							SEGGER_RTT_printf(0, "----------d1------------\n");
+						}
+						else
+						{
+							GO_1=0;						//close
+//							LED2_CTL = 1;
+//							delay_ms(100);  //100
+							SEGGER_RTT_printf(0, "----------d2------------\n");
+						}
+
 					
 						break;
 					case 2://
