@@ -35,7 +35,7 @@ void EXTIX_Init(void)
 
   	EXTI_InitStructure.EXTI_Line=EXTI_Line6;
   	EXTI_InitStructure.EXTI_Mode = EXTI_Mode_Interrupt;	
-  	EXTI_InitStructure.EXTI_Trigger = EXTI_Trigger_Rising_Falling;//EXTI_Trigger_Rising;//EXTI_Trigger_Rising_Falling;
+  	EXTI_InitStructure.EXTI_Trigger = EXTI_Trigger_Rising;//EXTI_Trigger_Rising;//EXTI_Trigger_Rising_Falling;
   	EXTI_InitStructure.EXTI_LineCmd = ENABLE;
   	EXTI_Init(&EXTI_InitStructure);	  	//根据EXTI_InitStruct中指定的参数初始化外设EXTI寄存器
 
@@ -89,22 +89,23 @@ void EXTI9_5_IRQHandler(void)
 	//SEGGER_RTT_printf(0, "EXTI1_IRQHandler\n"); 
   //delay_ms(10);    //消抖			 
   //if(GI_2==0)//
-//	if(GPIO_ReadInputDataBit(GPIOB,GPIO_Pin_6) ==1)	
-//	{
+	// if(GPIO_ReadInputDataBit(GPIOB,GPIO_Pin_6) ==1)	
+	{
 //		SEGGER_RTT_printf(0, "2-high-EXTI6_IRQHandler\n"); 
 //		lock_jiance_flag=1;
 		//LED2_LOCK = !LED2_LOCK;
 		//LED1=!LED1;
 		
 		lock_jiance_flag=1;
-		GO_1=0;						//close
+		lock_all_off();
 
 		LED2_CTL = 1;
 		delay_ms(100);  //100
+		LED2_CTL = 0;
 		SEGGER_RTT_printf(0, "----------d3------------\n");
 		
 		
-//	}
+	}
 //	else
 //	{
 //		SEGGER_RTT_printf(0, "2-low-EXTI6_IRQHandler\n"); 
