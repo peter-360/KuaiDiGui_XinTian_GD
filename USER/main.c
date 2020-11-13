@@ -230,344 +230,247 @@ void lock_all_on_off(void)
 {
 
 	GO_1=1; 					//open
-	delay_ms(100);  //>=20
-	if(1==GI_1)//no open
-	{
-		//debug_uart_send_data1(0x01);
-		delay_ms(300);
-	}
-	if(1==GI_1)//no open
+	delay_ms(200);  //>=20
+	if(0==GI_1)//no open
 	{
 		//debug_uart_send_data1(0x02);
-		delay_ms(600);
+		delay_ms(800);
 	}
 	GO_1=0;						//close
-	delay_ms(500);
+	delay_ms(400); 
 
 
 	//LED1 =1;
 
 	
 	GO_2=1;							 //open
-	delay_ms(100);  //>=20
-	if(1==GI_2)//no open
+	delay_ms(200);  //>=20
+	if(0==GI_2)//no open
 	{
-		delay_ms(300);
-	}
-	if(1==GI_2)//no open
-	{
-		delay_ms(600);
+		delay_ms(800);
 	}
 	GO_2=0;	 						 //close
 	//LED1 =0;
-	delay_ms(500);LED1=!LED1;
+	delay_ms(400); 
 
 	
 	
 	GO_3=1;							 //open
-	delay_ms(100);  //>=20
-	if(1==GI_3)//no open
+	delay_ms(200);  //>=20
+	if(0==GI_3)//no open
 	{
-		delay_ms(300);
-	}
-	if(1==GI_3)//no open
-	{
-		delay_ms(600);
+		delay_ms(800);
 	}
 	GO_3=0;	 						 //close
-	delay_ms(500);LED1=!LED1;
+	delay_ms(400); 
 
 
 	GO_4=1;							 //open
-	delay_ms(100);  //>=20
-	if(1==GI_4)//no open
+	delay_ms(200);  //>=20
+	if(0==GI_4)//no open
 	{
-		delay_ms(300);
-	}
-	if(1==GI_4)//no open
-	{
-		delay_ms(600);
+		delay_ms(800);
 	} 
 	GO_4=0;	 						 //close
-	delay_ms(500);LED1=!LED1;
+	delay_ms(400); 
 
 
 	GO_5=1;							 //open
-	delay_ms(100);  //>=20
-	if(1==GI_5)//no open
+	delay_ms(200);  //>=20
+	if(0==GI_5)//no open
 	{
-		delay_ms(300);
-	}
-	if(1==GI_5)//no open
-	{
-		delay_ms(600);
+		delay_ms(800);
 	} 
 	GO_5=0;	 						 //close
-	delay_ms(500);LED1=!LED1;
+	delay_ms(400); 
 
 
 	GO_6=1;							 //open
-	delay_ms(100);  //>=20
-	if(1==GI_6)//no open
+	delay_ms(200);  //>=20
+	if(0==GI_6)//no open
 	{
-		delay_ms(300);
-	}
-	if(1==GI_6)//no open
-	{
-		delay_ms(600);
+		delay_ms(800);
 	}
 	GO_6=0;	 						 //close
-	delay_ms(500);LED1=!LED1;
+	delay_ms(400); 
 
 
 	GO_7=1;							 //open
-	delay_ms(100);  //>=20
-	if(1==GI_7)//no open
+	delay_ms(200);  //>=20
+	if(0==GI_7)//no open
 	{
-		delay_ms(300);
-	}
-	if(1==GI_7)//no open
-	{
-		delay_ms(600);
+		delay_ms(800);
 	}
 	GO_7=0;	 						 //close
-	delay_ms(500);LED1=!LED1;
+	delay_ms(400); 
 
 
 	GO_8=1;							 //open
-	delay_ms(100);  //>=20
-	if(1==GI_8)//no open
+	delay_ms(200);  //>=20
+	if(0==GI_8)//no open
 	{
-		delay_ms(300);
-	}
-	if(1==GI_8)//no open
-	{
-		delay_ms(600);
+		delay_ms(800);
 	}
 	GO_8=0;	 						 //close
-	delay_ms(500);LED1=!LED1;
+	delay_ms(400); 
 	
 
 	GO_9=1;							 //open
-	delay_ms(100);  //>=20
-	if(1==GI_9)//no open
+	delay_ms(200);  //>=20
+	if(0==GI_9)//no open
 	{
-		delay_ms(300);
-	}
-	if(1==GI_9)//no open
-	{
-		delay_ms(600);
+		delay_ms(800);
 	}
 	GO_9=0;	 						 //close
-	delay_ms(500);LED1=!LED1;
+	delay_ms(400); 
 
 
 	GO_10=1;							 //open
-	delay_ms(100);  //>=20
-	if(1==GI_10)//no open
+	delay_ms(200);  //>=20
+	if(0==GI_10)//no open
 	{
-		delay_ms(300);
-	}
-	if(1==GI_10)//no open
-	{
-		delay_ms(600);
+		delay_ms(800);
 	} 
 	GO_10=0;	 						 //close
-	delay_ms(500);LED1=!LED1;
+	delay_ms(400); 
 
 
 	GO_11=1;							 //open
-	delay_ms(100);  //>=20
-	if(1==GI_11)//no open
+	delay_ms(200);  //>=20
+	if(0==GI_11)//no open
 	{
-		delay_ms(300);
-	}
-	if(1==GI_11)//no open
-	{
-		delay_ms(600);
+		delay_ms(800);
 	} 
 	GO_11=0;	 						 //close
-	delay_ms(500);LED1=!LED1;
+	delay_ms(400); 
 
 
 	GO_12=1;							 //open
-	delay_ms(100);  //>=20
-	if(1==GI_12)//no open
+	delay_ms(200);  //>=20
+	if(0==GI_12)//no open
 	{
-		delay_ms(300);
-	}
-	if(1==GI_12)//no open
-	{
-		delay_ms(600);
+		delay_ms(800);
 	} 
 	GO_12=0;	 						 //close
-	delay_ms(500);LED1=!LED1;
+	delay_ms(400); 
 
 
 	GO_13=1;							 //open
-	delay_ms(100);  //>=20
-	if(1==GI_13)//no open
+	delay_ms(200);  //>=20
+	if(0==GI_13)//no open
 	{
-		delay_ms(300);
-	}
-	if(1==GI_13)//no open
-	{
-		delay_ms(600);
+		delay_ms(800);
 	} 
 	GO_13=0;	 						 //close
-	delay_ms(500);LED1=!LED1;
+	delay_ms(400); 
 
 
 	GO_14=1;							 //open
-	delay_ms(100);  //>=20
-	if(1==GI_14)//no open
+	delay_ms(200);  //>=20
+	if(0==GI_14)//no open
 	{
-		delay_ms(300);
-	}
-	if(1==GI_14)//no open
-	{
-		delay_ms(600);
+		delay_ms(800);
 	} 
 	GO_14=0;	 						 //close
-	delay_ms(500);LED1=!LED1;
+	delay_ms(400); 
 
 
 	GO_15=1;							 //open
-	delay_ms(100);  //>=20
-	if(1==GI_15)//no open
+	delay_ms(200);  //>=20
+	if(0==GI_15)//no open
 	{
-		delay_ms(300);
-	}
-	if(1==GI_15)//no open
-	{
-		delay_ms(600);
+		delay_ms(800);
 	} 
 	GO_15=0;	 						 //close
-	delay_ms(500);LED1=!LED1;
+	delay_ms(400); 
 
 
 	GO_16=1;							 //open
-	delay_ms(100);  //>=20
-	if(1==GI_16)//no open
+	delay_ms(200);  //>=20
+	if(0==GI_16)//no open
 	{
-		delay_ms(300);
-	}
-	if(1==GI_16)//no open
-	{
-		delay_ms(600);
+		delay_ms(800);
 	} 
 	GO_16=0;	 						 //close
-	delay_ms(500);LED1=!LED1;
+	delay_ms(400); 
 
 
 	GO_17=1;							 //open
-	delay_ms(100);  //>=20
-	if(1==GI_17)//no open
+	delay_ms(200);  //>=20
+	if(0==GI_17)//no open
 	{
-		delay_ms(300);
-	}
-	if(1==GI_17)//no open
-	{
-		delay_ms(600);
+		delay_ms(800);
 	} 
 	GO_17=0;	 						 //close
-	delay_ms(500);LED1=!LED1;
+	delay_ms(400); 
 
 
 	GO_18=1;							 //open
-	delay_ms(100);  //>=20
-	if(1==GI_18)//no open
+	delay_ms(200);  //>=20
+	if(0==GI_18)//no open
 	{
-		delay_ms(300);
-	}
-	if(1==GI_18)//no open
-	{
-		delay_ms(600);
+		delay_ms(800);
 	} 
 	GO_18=0;	 						 //close
-	delay_ms(500);LED1=!LED1;
+	delay_ms(400); 
 
 
 	GO_19=1;							 //open
-	delay_ms(100);  //>=20
-	if(1==GI_19)//no open
+	delay_ms(200);  //>=20
+	if(0==GI_19)//no open
 	{
-		delay_ms(300);
-	}
-	if(1==GI_19)//no open
-	{
-		delay_ms(600);
+		delay_ms(800);
 	} 
 	GO_19=0;	 						 //close
-	delay_ms(500);LED1=!LED1;
+	delay_ms(400); 
 
 
 	GO_20=1;							 //open
-	delay_ms(100);  //>=20
-	if(1==GI_20)//no open
+	delay_ms(200);  //>=20
+	if(0==GI_20)//no open
 	{
-		delay_ms(300);
-	}
-	if(1==GI_20)//no open
-	{
-		delay_ms(600);
+		delay_ms(800);
 	}   
 	GO_20=0;	 						 //close
-	delay_ms(500);LED1=!LED1;
+	delay_ms(400); 
 
 
 	
 	GO_21=1;							 //open
-	delay_ms(100);  //>=20
-	if(1==GI_21)//no open
+	delay_ms(200);  //>=20
+	if(0==GI_21)//no open
 	{
-		delay_ms(300);
-	}
-	if(1==GI_21)//no open
-	{
-		delay_ms(600);
+		delay_ms(800);
 	}  
 	GO_21=0;	 						 //close
-	delay_ms(500);LED1=!LED1;
+	delay_ms(400); 
 
 
 	GO_22=1;							 //open
-	delay_ms(100);  //>=20
-	if(1==GI_22)//no open
+	delay_ms(200);  //>=20
+	if(0==GI_22)//no open
 	{
-		delay_ms(300);
-	}
-	if(1==GI_22)//no open
-	{
-		delay_ms(600);
+		delay_ms(800);
 	} 
 	GO_22=0;	 						 //close
-	delay_ms(500);LED1=!LED1;
+	delay_ms(400); 
 
 
 	GO_23=1;							 //open
-	delay_ms(100);  //>=20
-	if(1==GI_23)//no open
+	delay_ms(200);  //>=20
+	if(0==GI_23)//no open
 	{
-		delay_ms(300);
-	}
-	if(1==GI_23)//no open
-	{
-		delay_ms(600);
+		delay_ms(800);
 	} 
 	GO_23=0;	 						 //close
-	delay_ms(500);LED1=!LED1;
+	delay_ms(400); 
 
 
 	GO_24=1;							 //open
-	delay_ms(100);  //>=20
-	if(1==GI_24)//no open
+	delay_ms(200);  //>=20
+	if(0==GI_24)//no open
 	{
-		delay_ms(300);
-	}
-	if(1==GI_24)//no open
-	{
-		delay_ms(600);
+		delay_ms(800);
 	} 
 	GO_24=0;	 						 //close
 	
@@ -579,10 +482,10 @@ void data_parse()
 	uint8_t bcc_temp;
 	uint8_t tx_Buffer[256]={0};        //?????
 	//uint8_t length = 0;             //??
-	uint8_t gpio_level;
-	uint8_t grp_level_1;
-	uint8_t grp_level_2;
-	uint8_t grp_level_3;
+	uint8_t gpio_level=0;
+	uint8_t grp_level_1=0;
+	uint8_t grp_level_2=0;
+	uint8_t grp_level_3=0;
 	uint8_t board_addr;
 	
 	uint8_t Uart1_Buffer_T[256]={0};        //?????
@@ -620,34 +523,25 @@ void data_parse()
 							{
 								case 1:
 									GO_1=1; 					//open
-									delay_ms(100);  //>=20
-									if(1==GI_1)//no open
-									{
-										SEGGER_RTT_printf(0, "----1111-----\n");
-										delay_ms(300);
-									}
-									if(1==GI_1)//no open
+									delay_ms(200);  //>=20
+									if(0==GI_1)//no open
 									{
 										SEGGER_RTT_printf(0, "----2222-----\n");
-										delay_ms(600);
+										delay_ms(800);
 									}
 									GO_1=0;						//close
 
 									//LED1 =1;
 									gpio_level= GI_1;
-																			SEGGER_RTT_printf(0, "%d:gpio_level = %x\n",m_data.lock_addr,gpio_level);
+									SEGGER_RTT_printf(0, "%d:gpio_level = %x\n",m_data.lock_addr,gpio_level);
 									break;
 								
 								case 2:
 									GO_2=1;							 //open
-									delay_ms(100);  //>=20
-									if(1==GI_2)//no open
+									delay_ms(200);  //>=20
+									if(0==GI_2)//no open
 									{
-										delay_ms(300);
-									}
-									if(1==GI_2)//no open
-									{
-										delay_ms(600);
+										delay_ms(800);
 									}
 									GO_2=0;	 						 //close
 
@@ -659,14 +553,10 @@ void data_parse()
 								
 								case 3:
 									GO_3=1;							 //open
-									delay_ms(100);  //>=20
-									if(1==GI_3)//no open
+									delay_ms(200);  //>=20
+									if(0==GI_3)//no open
 									{
-										delay_ms(300);
-									}
-									if(1==GI_3)//no open
-									{
-										delay_ms(600);
+										delay_ms(800);
 									}
 									GO_3=0;	 						 //close
 
@@ -675,14 +565,10 @@ void data_parse()
 									break;
 								case 4:
 									GO_4=1;							 //open
-									delay_ms(100);  //>=20
-									if(1==GI_4)//no open
+									delay_ms(200);  //>=20
+									if(0==GI_4)//no open
 									{
-										delay_ms(300);
-									}
-									if(1==GI_4)//no open
-									{
-										delay_ms(600);
+										delay_ms(800);
 									} 
 									GO_4=0;	 						 //close
 
@@ -691,14 +577,10 @@ void data_parse()
 									break;
 								case 5:
 									GO_5=1;							 //open
-									delay_ms(100);  //>=20
-									if(1==GI_5)//no open
+									delay_ms(200);  //>=20
+									if(0==GI_5)//no open
 									{
-										delay_ms(300);
-									}
-									if(1==GI_5)//no open
-									{
-										delay_ms(600);
+										delay_ms(800);
 									} 
 									GO_5=0;	 						 //close
 
@@ -707,14 +589,10 @@ void data_parse()
 									break;
 								case 6:
 									GO_6=1;							 //open
-									delay_ms(100);  //>=20
-									if(1==GI_6)//no open
+									delay_ms(200);  //>=20
+									if(0==GI_6)//no open
 									{
-										delay_ms(300);
-									}
-									if(1==GI_6)//no open
-									{
-										delay_ms(600);
+										delay_ms(800);
 									}
 									GO_6=0;	 						 //close
 
@@ -723,14 +601,10 @@ void data_parse()
 									break;
 								case 7:
 									GO_7=1;							 //open
-									delay_ms(100);  //>=20
-									if(1==GI_7)//no open
+									delay_ms(200);  //>=20
+									if(0==GI_7)//no open
 									{
-										delay_ms(300);
-									}
-									if(1==GI_7)//no open
-									{
-										delay_ms(600);
+										delay_ms(800);
 									}
 									GO_7=0;	 						 //close
 
@@ -739,30 +613,22 @@ void data_parse()
 									break;
 								case 8:
 									GO_8=1;							 //open
-									delay_ms(100);  //>=20
-									if(1==GI_8)//no open
+									delay_ms(200);  //>=20
+									if(0==GI_8)//no open
 									{
-										delay_ms(300);
-									}
-									if(1==GI_8)//no open
-									{
-										delay_ms(600);
+										delay_ms(800);
 									}
 									GO_8=0;	 						 //close
 
-									gpio_level= GI_2;
+									gpio_level= GI_8;//GI_2;
 									//SEGGER_RTT_printf(0, "%d:gpio_level = %x\n",m_data.lock_addr,gpio_level);
 									break;
 								case 9:
 									GO_9=1;							 //open
-									delay_ms(100);  //>=20
-									if(1==GI_9)//no open
+									delay_ms(200);  //>=20
+									if(0==GI_9)//no open
 									{
-										delay_ms(300);
-									}
-									if(1==GI_9)//no open
-									{
-										delay_ms(600);
+										delay_ms(800);
 									}
 									GO_9=0;	 						 //close
 
@@ -771,14 +637,10 @@ void data_parse()
 									break;
 								case 10:
 									GO_10=1;							 //open
-									delay_ms(100);  //>=20
-									if(1==GI_10)//no open
+									delay_ms(200);  //>=20
+									if(0==GI_10)//no open
 									{
-										delay_ms(300);
-									}
-									if(1==GI_10)//no open
-									{
-										delay_ms(600);
+										delay_ms(800);
 									} 
 									GO_10=0;	 						 //close
 
@@ -787,14 +649,10 @@ void data_parse()
 									break;
 								case 11:
 									GO_11=1;							 //open
-									delay_ms(100);  //>=20
-									if(1==GI_11)//no open
+									delay_ms(200);  //>=20
+									if(0==GI_11)//no open
 									{
-										delay_ms(300);
-									}
-									if(1==GI_11)//no open
-									{
-										delay_ms(600);
+										delay_ms(800);
 									} 
 									GO_11=0;	 						 //close
 
@@ -803,14 +661,10 @@ void data_parse()
 									break;
 								case 12:
 									GO_12=1;							 //open
-									delay_ms(100);  //>=20
-									if(1==GI_12)//no open
+									delay_ms(200);  //>=20
+									if(0==GI_12)//no open
 									{
-										delay_ms(300);
-									}
-									if(1==GI_12)//no open
-									{
-										delay_ms(600);
+										delay_ms(800);
 									} 
 									GO_12=0;	 						 //close
 
@@ -819,14 +673,10 @@ void data_parse()
 									break;
 								case 13:
 									GO_13=1;							 //open
-									delay_ms(100);  //>=20
-									if(1==GI_13)//no open
+									delay_ms(200);  //>=20
+									if(0==GI_13)//no open
 									{
-										delay_ms(300);
-									}
-									if(1==GI_13)//no open
-									{
-										delay_ms(600);
+										delay_ms(800);
 									} 
 									GO_13=0;	 						 //close
 
@@ -835,14 +685,10 @@ void data_parse()
 									break;
 								case 14:
 									GO_14=1;							 //open
-									delay_ms(100);  //>=20
-									if(1==GI_14)//no open
+									delay_ms(200);  //>=20
+									if(0==GI_14)//no open
 									{
-										delay_ms(300);
-									}
-									if(1==GI_14)//no open
-									{
-										delay_ms(600);
+										delay_ms(800);
 									} 
 									GO_14=0;	 						 //close
 
@@ -851,14 +697,10 @@ void data_parse()
 									break;
 								case 15:
 									GO_15=1;							 //open
-									delay_ms(100);  //>=20
-									if(1==GI_15)//no open
+									delay_ms(200);  //>=20
+									if(0==GI_15)//no open
 									{
-										delay_ms(300);
-									}
-									if(1==GI_15)//no open
-									{
-										delay_ms(600);
+										delay_ms(800);
 									} 
 									GO_15=0;	 						 //close
 
@@ -867,14 +709,10 @@ void data_parse()
 									break;
 								case 16:
 									GO_16=1;							 //open
-									delay_ms(100);  //>=20
-									if(1==GI_16)//no open
+									delay_ms(200);  //>=20
+									if(0==GI_16)//no open
 									{
-										delay_ms(300);
-									}
-									if(1==GI_16)//no open
-									{
-										delay_ms(600);
+										delay_ms(800);
 									} 
 									GO_16=0;	 						 //close
 
@@ -883,14 +721,10 @@ void data_parse()
 									break;
 								case 17:
 									GO_17=1;							 //open
-									delay_ms(100);  //>=20
-									if(1==GI_17)//no open
+									delay_ms(200);  //>=20
+									if(0==GI_17)//no open
 									{
-										delay_ms(300);
-									}
-									if(1==GI_17)//no open
-									{
-										delay_ms(600);
+										delay_ms(800);
 									} 
 									GO_17=0;	 						 //close
 
@@ -899,14 +733,10 @@ void data_parse()
 									break;
 								case 18:
 									GO_18=1;							 //open
-									delay_ms(100);  //>=20
-									if(1==GI_18)//no open
+									delay_ms(200);  //>=20
+									if(0==GI_18)//no open
 									{
-										delay_ms(300);
-									}
-									if(1==GI_18)//no open
-									{
-										delay_ms(600);
+										delay_ms(800);
 									} 
 									GO_18=0;	 						 //close
 
@@ -915,14 +745,10 @@ void data_parse()
 									break;
 								case 19:
 									GO_19=1;							 //open
-									delay_ms(100);  //>=20
-									if(1==GI_19)//no open
+									delay_ms(200);  //>=20
+									if(0==GI_19)//no open
 									{
-										delay_ms(300);
-									}
-									if(1==GI_19)//no open
-									{
-										delay_ms(600);
+										delay_ms(800);
 									} 
 									GO_19=0;	 						 //close
 
@@ -931,14 +757,10 @@ void data_parse()
 									break;
 								case 20:
 									GO_20=1;							 //open
-									delay_ms(100);  //>=20
-									if(1==GI_20)//no open
+									delay_ms(200);  //>=20
+									if(0==GI_20)//no open
 									{
-										delay_ms(300);
-									}
-									if(1==GI_20)//no open
-									{
-										delay_ms(600);
+										delay_ms(800);
 									}   
 									GO_20=0;	 						 //close
 
@@ -947,14 +769,10 @@ void data_parse()
 									break;
 								case 21:
 									GO_21=1;							 //open
-									delay_ms(100);  //>=20
-									if(1==GI_21)//no open
+									delay_ms(200);  //>=20
+									if(0==GI_21)//no open
 									{
-										delay_ms(300);
-									}
-									if(1==GI_21)//no open
-									{
-										delay_ms(600);
+										delay_ms(800);
 									}  
 									GO_21=0;	 						 //close
 
@@ -963,14 +781,10 @@ void data_parse()
 									break;
 								case 22:
 									GO_22=1;							 //open
-									delay_ms(100);  //>=20
-									if(1==GI_22)//no open
+									delay_ms(200);  //>=20
+									if(0==GI_22)//no open
 									{
-										delay_ms(300);
-									}
-									if(1==GI_22)//no open
-									{
-										delay_ms(600);
+										delay_ms(800);
 									} 
 									GO_22=0;	 						 //close
 
@@ -979,14 +793,10 @@ void data_parse()
 									break;
 								case 23:
 									GO_23=1;							 //open
-									delay_ms(100);  //>=20
-									if(1==GI_23)//no open
+									delay_ms(200);  //>=20
+									if(0==GI_23)//no open
 									{
-										delay_ms(300);
-									}
-									if(1==GI_23)//no open
-									{
-										delay_ms(600);
+										delay_ms(800);
 									} 
 									GO_23=0;	 						 //close
 
@@ -995,14 +805,10 @@ void data_parse()
 									break;
 								case 24:
 									GO_24=1;							 //open
-									delay_ms(100);  //>=20
-									if(1==GI_24)//no open
+									delay_ms(200);  //>=20
+									if(0==GI_24)//no open
 									{
-										delay_ms(300);
-									}
-									if(1==GI_24)//no open
-									{
-										delay_ms(600);
+										delay_ms(800);
 									} 
 									GO_24=0;	 						 //close
 
@@ -3064,7 +2870,7 @@ u8 key_mode =1;
       }
       else//mode 3
       {
-				TIM4_Int_Init(4999,7199);//10Khz的计数频率，计数到5000为500ms  
+				TIM4_Int_Init(3999,7199);//10Khz的计数频率，计数到4000为400ms  
 				TIM4_Set(1);
 				if(1==key_mode)
 				{

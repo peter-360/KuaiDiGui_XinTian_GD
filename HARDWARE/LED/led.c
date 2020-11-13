@@ -321,28 +321,27 @@ void TIM4_IRQHandler(void)   //TIM4中断
 					SEGGER_RTT_printf(0, "lock_channel=%d\n",lock_channel);
 					case 1://power on
 						GO_1=1; 					//open
-//						delay_us(100);
 						//-------in occure-------
-						// if(0==lock_jiance_flag)
+						delay_ms(200);
+						if(0==GI_1)//no open
 						{
-							delay_ms(300);
-							GO_1=0;
-							SEGGER_RTT_printf(0, "----------d1------------\n");
+							delay_ms(100);//delay_ms(800)
 						}
-// 						else
-// 						{
-// 							GO_1=0;						//close
-// //							//LED2_CTL
-// //							delay_ms(100);  //100
-// 							SEGGER_RTT_printf(0, "----------d2------------\n");
-// 						}
+						GO_1=0;
+
+						SEGGER_RTT_printf(0, "----------d1------------\n");
+
 
 					
 						break;
 					case 2://
 						GO_2=1;							 //open
 						//LED2_CTL
-						delay_ms(100);  
+						delay_ms(200);  
+						if(0==GI_2)//no open
+						{
+							delay_ms(100);//delay_ms(800)
+						}
 						GO_2=0;	 						 //close
 						
 					
@@ -352,7 +351,11 @@ void TIM4_IRQHandler(void)   //TIM4中断
 					case 3:
 						GO_3=1;							 //open
 						//LED2_CTL
-						delay_ms(100);  
+						delay_ms(200);  
+						if(0==GI_3)//no open
+						{
+							delay_ms(100);//delay_ms(800)
+						}
 						GO_3=0;	 						 //close
 						
 
@@ -360,7 +363,11 @@ void TIM4_IRQHandler(void)   //TIM4中断
 					case 4:
 						GO_4=1;							 //open
 						//LED2_CTL
-						delay_ms(100);  
+						delay_ms(200);  
+						if(0==GI_4)//no open
+						{
+							delay_ms(100);//delay_ms(800)
+						}
 						GO_4=0;	 						 //close
 						
 
@@ -369,7 +376,11 @@ void TIM4_IRQHandler(void)   //TIM4中断
 					case 5:
 						GO_5=1;							 //open
 						//LED2_CTL
-						delay_ms(100);  
+						delay_ms(200);  
+						if(0==GI_5)//no open
+						{
+							delay_ms(100);//delay_ms(800)
+						}
 						GO_5=0;	 						 //close
 						
 
@@ -377,7 +388,11 @@ void TIM4_IRQHandler(void)   //TIM4中断
 					case 6:
 						GO_6=1;							 //open
 						//LED2_CTL
-						delay_ms(100);  
+						delay_ms(200);  
+						if(0==GI_6)//no open
+						{
+							delay_ms(100);//delay_ms(800)
+						}
 						GO_6=0;	 						 //close
 						
 
@@ -385,7 +400,11 @@ void TIM4_IRQHandler(void)   //TIM4中断
 					case 7:
 						GO_7=1;							 //open
 						//LED2_CTL
-						delay_ms(100);  
+						delay_ms(200);  
+						if(0==GI_7)//no open
+						{
+							delay_ms(100);//delay_ms(800)
+						}
 						GO_7=0;	 						 //close
 						
 
@@ -394,7 +413,11 @@ void TIM4_IRQHandler(void)   //TIM4中断
 					case 8:
 						GO_8=1;							 //open
 						//LED2_CTL
-						delay_ms(100);  
+						delay_ms(200);  
+						if(0==GI_8)//no open
+						{
+							delay_ms(100);//delay_ms(800)
+						}
 						GO_8=0;	 						 //close
 						
 
@@ -402,7 +425,11 @@ void TIM4_IRQHandler(void)   //TIM4中断
 					case 9:
 						GO_9=1;							 //open
 						//LED2_CTL
-						delay_ms(100);  
+						delay_ms(200);  
+						if(0==GI_9)//no open
+						{
+							delay_ms(100);//delay_ms(800)
+						}
 						GO_9=0;	 						 //close
 						
 
@@ -410,7 +437,11 @@ void TIM4_IRQHandler(void)   //TIM4中断
 					case 10:
 						GO_10=1;							 //open
 						//LED2_CTL
-						delay_ms(100);  
+						delay_ms(200); 
+						if(0==GI_10)//no open
+						{
+							delay_ms(100);//delay_ms(800)
+						}
 						GO_10=0;	 						 //close
 						
 
@@ -419,7 +450,11 @@ void TIM4_IRQHandler(void)   //TIM4中断
 					case 11:
 						GO_11=1;							 //open
 						//LED2_CTL
-						delay_ms(100);  
+						delay_ms(200);  
+						if(0==GI_11)//no open
+						{
+							delay_ms(100);//delay_ms(800)
+						}
 						GO_11=0;	 						 //close
 						
 
@@ -427,7 +462,11 @@ void TIM4_IRQHandler(void)   //TIM4中断
 					case 12:
 						GO_12=1;							 //open
 						//LED2_CTL
-						delay_ms(100);  
+						delay_ms(200);  
+						if(0==GI_12)//no open
+						{
+							delay_ms(100);//delay_ms(800)
+						}
 						GO_12=0;	 						 //close
 						
 					
@@ -435,7 +474,11 @@ void TIM4_IRQHandler(void)   //TIM4中断
 					case 13:
 						GO_13=1;							 //open
 						//LED2_CTL
-						delay_ms(100);  
+						delay_ms(200);  
+						if(0==GI_13)//no open
+						{
+							delay_ms(100);//delay_ms(800)
+						}
 						GO_13=0;	 						 //close
 						
 
@@ -443,7 +486,11 @@ void TIM4_IRQHandler(void)   //TIM4中断
 					case 14:
 						GO_14=1;							 //open
 						//LED2_CTL
-						delay_ms(100);  
+						delay_ms(200);  
+						if(0==GI_14)//no open
+						{
+							delay_ms(100);//delay_ms(800)
+						}
 						GO_14=0;	 						 //close
 						
 
@@ -451,7 +498,11 @@ void TIM4_IRQHandler(void)   //TIM4中断
 					case 15:
 						GO_15=1;							 //open
 						//LED2_CTL
-						delay_ms(100);  
+						delay_ms(200);  
+						if(0==GI_15)//no open
+						{
+							delay_ms(100);//delay_ms(800)
+						}
 						GO_15=0;	 						 //close
 						
 
@@ -459,7 +510,11 @@ void TIM4_IRQHandler(void)   //TIM4中断
 					case 16:
 						GO_16=1;							 //open
 						//LED2_CTL
-						delay_ms(100);  
+						delay_ms(200);  
+						if(0==GI_16)//no open
+						{
+							delay_ms(100);//delay_ms(800)
+						}
 						GO_16=0;	 						 //close
 						
 
@@ -467,7 +522,11 @@ void TIM4_IRQHandler(void)   //TIM4中断
 					case 17:
 						GO_17=1;							 //open
 						//LED2_CTL
-						delay_ms(100);  
+						delay_ms(200);  
+						if(0==GI_17)//no open
+						{
+							delay_ms(100);//delay_ms(800)
+						}
 						GO_17=0;	 						 //close
 						
 
@@ -475,7 +534,11 @@ void TIM4_IRQHandler(void)   //TIM4中断
 					case 18:
 						GO_18=1;							 //open
 						//LED2_CTL
-						delay_ms(100);  
+						delay_ms(200);  
+						if(0==GI_18)//no open
+						{
+							delay_ms(100);//delay_ms(800)
+						}
 						GO_18=0;	 						 //close
 						
 
@@ -483,7 +546,11 @@ void TIM4_IRQHandler(void)   //TIM4中断
 					case 19:
 						GO_19=1;							 //open
 						//LED2_CTL
-						delay_ms(100);  
+						delay_ms(200);  
+						if(0==GI_19)//no open
+						{
+							delay_ms(100);//delay_ms(800)
+						}
 						GO_19=0;	 						 //close
 						
 					
@@ -491,7 +558,11 @@ void TIM4_IRQHandler(void)   //TIM4中断
 					case 20:
 						GO_20=1;							 //open
 						//LED2_CTL
-						delay_ms(100);  
+						delay_ms(200); 
+						if(0==GI_20)//no open
+						{
+							delay_ms(100);//delay_ms(800)
+						}
 						GO_20=0;	 						 //close
 						
 
@@ -499,7 +570,11 @@ void TIM4_IRQHandler(void)   //TIM4中断
 					case 21:
 						GO_21=1;							 //open
 						//LED2_CTL
-						delay_ms(100);  
+						delay_ms(200);  
+						if(0==GI_21)//no open
+						{
+							delay_ms(100);//delay_ms(800)
+						}
 						GO_21=0;	 						 //close
 						
 
@@ -507,7 +582,11 @@ void TIM4_IRQHandler(void)   //TIM4中断
 					case 22:
 						GO_22=1;							 //open
 						//LED2_CTL
-						delay_ms(100);  
+						delay_ms(200); 
+						if(0==GI_22)//no open
+						{
+							delay_ms(100);//delay_ms(800)
+						}
 						GO_22=0;	 						 //close
 						
 
@@ -515,7 +594,11 @@ void TIM4_IRQHandler(void)   //TIM4中断
 					case 23:
 						GO_23=1;							 //open
 						//LED2_CTL
-						delay_ms(100);  
+						delay_ms(200);  
+						if(0==GI_23)//no open
+						{
+							delay_ms(100);//delay_ms(800)
+						}
 						GO_23=0;	 						 //close
 						
 
@@ -523,7 +606,11 @@ void TIM4_IRQHandler(void)   //TIM4中断
 					case 24:
 						GO_24=1;							 //open
 						//LED2_CTL
-						delay_ms(100);  
+						delay_ms(200);  
+						if(0==GI_24)//no open
+						{
+							delay_ms(100);//delay_ms(800)
+						}
 						GO_24=0;	 						 //close
 						
 
