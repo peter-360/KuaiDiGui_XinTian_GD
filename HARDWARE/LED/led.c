@@ -533,7 +533,7 @@ void TIM4_IRQHandler(void)   //TIM4ÖÐ¶Ï
 					default:
 						break;
 				}
-				LED2_CTL = 0;
+//				LED2_CTL;
 				lock_all_off();
 				TIM4_Set(1);			//TIM 
 			}
